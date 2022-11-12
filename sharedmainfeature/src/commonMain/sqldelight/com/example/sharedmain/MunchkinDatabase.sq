@@ -1,0 +1,51 @@
+CREATE TABLE IF NOT EXISTS ManchkinEntity (
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+name TEXT NOT NULL,
+level INTEGER NOT NULL,
+strength INTEGER NOT NULL,
+sex TEXT NOT NULL
+);
+
+insertMunchkin:
+INSERT OR REPLACE INTO ManchkinEntity
+VALUES(?, ?, ?, ?, ?);
+
+deleteAllMunchkins:
+DELETE FROM ManchkinEntity;
+
+deleteMunchkinById:
+DELETE FROM ManchkinEntity
+WHERE id = ?;
+
+selectMunchkinByName:
+SELECT * FROM ManchkinEntity
+WHERE name = ?;
+
+selectMunchkinById:
+SELECT * FROM ManchkinEntity
+WHERE id = ?;
+
+selectAllMunchkins:
+SELECT * FROM ManchkinEntity;
+
+CREATE TABLE IF NOT EXISTS RGBColor(
+id INTEGER PRIMARY KEY,
+red REAL NOT NULL,
+green REAL NOT NULL,
+blue REAL NOT NULL
+);
+
+insertColor:
+INSERT OR REPLACE INTO RGBColor
+VALUES(?, ?, ?, ?);
+
+selectColorById:
+SELECT * FROM RGBColor
+WHERE id = ?;
+
+updateMunchkinsColorById:
+UPDATE RGBColor
+SET red=?, green=?, blue=? WHERE id=?;
+
+deleteColorById:
+DELETE FROM RGBColor WHERE id=?;

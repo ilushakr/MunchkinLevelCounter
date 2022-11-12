@@ -1,0 +1,8 @@
+target 'iosApp' do
+  use_frameworks!
+  platform :ios, '14.1'
+  pod 'sharedbase', :path => '../sharedbase'
+
+  pod 'Swinject'
+
+end

@@ -1,0 +1,23 @@
+PODS:
+  - sharedbase (1.0)
+  - Swinject (2.8.2)
+
+DEPENDENCIES:
+  - sharedbase (from `../sharedbase`)
+  - Swinject
+
+SPEC REPOS:
+  trunk:
+    - Swinject
+
+EXTERNAL SOURCES:
+  sharedbase:
+    :path: "../sharedbase"
+
+SPEC CHECKSUMS:
+  sharedbase: 8d29afc98a8728bc65b6c72d697741de56efff8f
+  Swinject: b4a11b31992e8668308dc594ba1cb9b3164a37ab
+
+PODFILE CHECKSUM: 6d256cd8c4cb1f620130c9fb3b5850baee7ab85b
+
+COCOAPODS: 1.11.3

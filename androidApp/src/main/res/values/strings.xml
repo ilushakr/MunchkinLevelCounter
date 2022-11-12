@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="blank_name">Name can\'t be blank</string>
+    <string name="killed_munchkin">%1$s is killed</string>
+    <string name="cancel_snackbar">Cancel</string>
+
+    <string name="preference_file_key">prefs_key</string>
+    <string name="keep_screen_on">keep_screen_on</string>
+</resources>
